@@ -3,7 +3,7 @@
 build
 /bin
 .gradle
-.poject
+.project
 .settings
 .classpath
 commitHash.txt
