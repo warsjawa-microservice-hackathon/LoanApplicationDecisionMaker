@@ -44,7 +44,7 @@ class DecisionController {
 
         marketingRequest.setDecision(decision)
 
-        ReportingRequest reportingRequest
+        ReportingRequest reportingRequest  = new ReportingRequest()
         reportingRequest.decision = decision
         reportingRequest.fraudStatus = decisionRequest.fraudStatus
         reportingRequest.job = decisionRequest.job
