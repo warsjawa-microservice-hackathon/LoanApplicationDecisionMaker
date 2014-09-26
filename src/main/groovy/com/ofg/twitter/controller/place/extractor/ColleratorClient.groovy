@@ -14,6 +14,7 @@ class ColleratorClient {
     }
 
     void populatePlaces(long pairId, String places) {
+
         serviceRestClient.forService(Collaborators.COLLERATOR_DEPENDENCY_NAME)
                 .post()
                 .onUrl("/$pairId")
