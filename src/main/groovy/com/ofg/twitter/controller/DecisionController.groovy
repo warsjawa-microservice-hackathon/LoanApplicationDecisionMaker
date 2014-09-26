@@ -51,17 +51,16 @@ class DecisionController {
         reportingRequest.loanId = loanApplicationId + 100000000
         reportingRequest.amount = decisionRequest.amount
 
+        serviceRestClient.forService("reporting")
+                .post()
+                .onUrl("/reporting")
+                .body(reportingRequest)
+                .ignoringResponse()
 
         serviceRestClient.forService("marketing")
                 .put()
                 .onUrl("/api/marketing/$loanApplicationId")
                 .body(marketingRequest)
-                .ignoringResponse()
-
-        serviceRestClient.forService("reporting")
-                .post()
-                .onUrl("/reporting")
-                .body(reportingRequest)
                 .ignoringResponse()
 
         return "zupa"
