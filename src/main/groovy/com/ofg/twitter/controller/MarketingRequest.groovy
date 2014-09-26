@@ -19,4 +19,13 @@ class MarketingRequest {
     void setDecision(String decision) {
         this.decision = decision
     }
+
+
+    @Override
+    public String toString() {
+        return "MarketingRequest{" +
+                "person=" + person +
+                ", decision='" + decision + '\'' +
+                '}';
+    }
 }

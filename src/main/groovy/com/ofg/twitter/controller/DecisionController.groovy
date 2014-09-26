@@ -51,11 +51,15 @@ class DecisionController {
         reportingRequest.loanId = loanApplicationId + 100000000
         reportingRequest.amount = decisionRequest.amount
 
+        log.info("reporting request {}", reportingRequest)
+
         serviceRestClient.forService("reporting")
                 .post()
                 .onUrl("/reporting")
                 .body(reportingRequest)
                 .ignoringResponse()
+
+        log.info("marketing request")
 
         serviceRestClient.forService("marketing")
                 .put()

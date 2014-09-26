@@ -8,4 +8,15 @@ class ReportingRequest {
     String fraudStatus
     String decision
 
+
+    @Override
+    public String toString() {
+        return "ReportingRequest{" +
+                "loanId='" + loanId + '\'' +
+                ", job='" + job + '\'' +
+                ", amount=" + amount +
+                ", fraudStatus='" + fraudStatus + '\'' +
+                ", decision='" + decision + '\'' +
+                '}';
+    }
 }

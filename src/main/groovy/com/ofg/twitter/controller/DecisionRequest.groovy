@@ -47,4 +47,16 @@ class DecisionRequest {
     void setFraudStatus(String fraudStatus) {
         this.fraudStatus = fraudStatus
     }
+
+
+    @Override
+    public String toString() {
+        return "DecisionRequest{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", job='" + job + '\'' +
+                ", amount=" + amount +
+                ", fraudStatus='" + fraudStatus + '\'' +
+                '}';
+    }
 }
