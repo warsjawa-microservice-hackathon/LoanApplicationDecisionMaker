@@ -23,7 +23,7 @@ ScanTime is set to $scanTime
 Logging to: $whereToLog
 Current log file is $currentLogFile
 Rolling file name pattern is $rollingFileNamePattern
-Max number of rolling files is $rollingFileMaxHistory
+Max amount of rolling files is $rollingFileMaxHistory
 """
 
 scan(scanTime)
